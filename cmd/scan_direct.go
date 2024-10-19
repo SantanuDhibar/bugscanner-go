@@ -100,6 +100,9 @@ func scanDirect(c *queuescanner.Ctx, p *queuescanner.QueueScannerScanParams) {
 		return
 	}
 
+		if httpRes.StatusCode == http.StatusFound {
+		return
+
 	hServer := httpRes.Header.Get("Server")
 	hServerLower := strings.ToLower(hServer)
 	hCfRay := httpRes.Header.Get("CF-RAY")
