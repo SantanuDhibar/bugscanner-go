@@ -1,4 +1,4 @@
-module github.com/LamonLind/bugscanner-go
+module github.com/SantanuDhibar/bugscanner-go
 
 go 1.18
 
